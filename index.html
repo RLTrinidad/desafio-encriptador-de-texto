@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon (1).ico">
+    <title>Encriptador De Texto - RT</title>
+</head>
+<body>
+    <header>
+        <div class="caja-header">
+            <h1>&lt;Encriptador De Texto&gt;</h1>
+        </div>
+    </header>
+    <main>
+        <section class="cuerpo">
+            <div class="parte-central">
+                <div class="parte-izquierda">
+                    <p>Texto A Encriptar</p>
+                    <textarea id="texto-encriptado" class="campo-texto" placeholder="Inserte aquí su texto para encriptar." onkeyup="mayus(this)" oninput="validarInput(this)" ></textarea>
+                    <p class="aclaracion">No admite mayusculas ni caracteres especiales.</p>
+                    <button id="boton" class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button id="boton" class="btnDesencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+                </div>
+                <div class="parte-derecha">
+                    <p>Texto Encriptado</p>
+                    <textarea id="campo-mensaje" class="texto-encriptado" placeholder="Aquí va su texto encriptado." disabled></textarea>
+                    <p class="texto-copiado">Texto copiado!</p>
+                    <button id="boton" class="btnCopiar" onclick="btnCopiarTexto(); mostrar();">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© Ricardo Trinidad - 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
