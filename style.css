@@ -10,7 +10,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 145px); /* Resta el alto del footer */
+    min-height: calc(100vh - 160px);
 }
 
 .caja-header{
@@ -80,13 +80,13 @@ h1{
 }
 
 .texto-copiado{
-    opacity: 0; /* Inicialmente invisible */
-    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
 }
 
 .footer{
     background: #1215c2;
-    position: relative; /* Cambiado a relative */
+    position: relative; 
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -94,6 +94,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .footer p{
@@ -102,16 +103,16 @@ h1{
 }
 
 #boton{
-    background: #1215c2; /* color de fondo */
-    color: #eeeeee; /* color de fuente */
-    border: 2px solid #757575; /* tamaño y color de borde */
+    background: #1215c2; 
+    color: #eeeeee; 
+    border: 2px solid #757575; 
     height: 50px;
     width: 120px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 10px; /* redondear bordes */
+    border-radius: 10px; 
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -119,12 +120,12 @@ h1{
 }
 
 #boton:hover {
-    color: #1215c2;/* color de fuente hover */
+    color: #1215c2;
 }
 
 #boton::after {
     content: "";
-    background: #ffffff; /* color de fondo hover */
+    background: #ffffff; 
     position: absolute;
     z-index: -1;
     padding: 16px 20px;
@@ -141,6 +142,5 @@ h1{
     transition: all 0.3s ease-out;
     transform: skewX(-45deg) scale(1, 1);
 }
-
 
 
